@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://recipe-page.vercel.app/>
+    <a href="https://recipe-page.vercel.app"/>
       Demo
     </a>
     <span> | </span>
