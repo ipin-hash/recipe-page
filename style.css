@@ -1,0 +1,431 @@
+/* my font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+
+
+/* css global */
+*,
+::after,
+::before 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root 
+{
+  --montserrat : 'Montserrat', sans-serif;
+  --playfair-display :'Playfair Display', serif;
+  --reguler: 400;
+  --medium: 500;
+  --bold: 700;
+}
+
+.active 
+{
+  color:  #F2994A !important; 
+}
+
+.container 
+{
+  padding-left: 16.5%;
+  padding-right: 16.5%;
+}
+
+
+
+/* --- header --- */
+
+#header 
+{
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+#header h1.title
+{
+  font-family: var(--playfair-display);
+  font-size: var(--bold);
+  font-size: 48px;
+  list-style: normal;
+  line-height: 64px;
+  margin-bottom: 12px;
+}
+
+#header p 
+{
+  font-family: var(--montserrat);
+  font-weight: var(--medium);
+  font-size: 14px;
+  line-height: 17px;
+  color: #4F4F4F;
+  width: 62%;
+}
+
+#header p i
+{ 
+  display: flex; 
+  align-items: flex-start;
+}
+
+#header p i::before 
+{
+  content: '';
+  background-image: url(./6dots.svg);
+  display: block;
+  top: 4px;
+  width: 41px;
+  height: 15px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  position: relative;
+}
+
+
+
+/* --- main --- */
+
+#main 
+{
+  margin-bottom: 100px;
+}
+
+.banner-img
+{
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+#main .content 
+{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/* --- article --- */
+
+#main  article 
+{
+  max-width: 650px;
+}
+
+#main .content h4.ingredient,
+#main h4.title
+{
+  font-family: var(--playfair-display);
+  font-style: normal;
+  font-weight: var(--bold);
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  color: #333333;
+}
+
+#main .content article i
+{
+  font-family: var(--playfair-display);
+  font-weight: var(--reguler);
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  padding-bottom: 31px;
+}   
+
+#main .content form 
+{
+  margin-top: 31px;
+  margin-bottom: 31px;
+}
+
+#main .content .ingredient label
+{
+  margin-left: 10px;
+  font-family: var(--montserrat);
+  font-weight: var(--reguler);
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+  padding-bottom: 12px;
+}
+
+#main ul li 
+{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+#main .content ul li .number {
+  font-family: var(--playfair-display);
+  background-color: #F2994A;
+  border-radius: 6px;
+  margin-right: 15px;
+  font-weight: var(--bold);
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  color: #fff;
+}
+
+p.instruction 
+{
+  font-family: var(--montserrat);
+  font-weight: var(--reguler);
+  font-size: 16px;
+  line-height: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+
+p.source 
+{
+  font-family:  var(--montserrat);
+  font-style: italic;
+  font-weight: var(--reguler);
+  font-size: 16px;
+  color: #BDBDBD;
+  margin-top: 50px;
+}
+
+
+
+/* --- aside --- */
+
+aside
+{
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.wrap 
+{
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  border-radius: 12px;
+  padding: 20px 50px 40px 50px;
+  right: 0;
+}
+
+.wrap .wrap_information 
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.wrap .wrap_information .material-icons
+{
+  font-size: 36px;
+  margin-right: 12px;
+}
+
+.wrap .wrap_information .information h5 
+{
+  font-family:  var(--montserrat);
+  font-weight: var(--bold);
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  color: #BDBDBD;
+}
+
+.wrap .wrap_information .information h4
+{
+  font-family:  var(--montserrat);
+  font-style: normal;
+  font-weight: var(--medium);
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+
+
+/* --- footer --- */
+
+footer h5 
+{
+  font-family: var(--montserrat);
+  font-weight: var(--medium);
+  font-size: 12px;
+  line-height: 17px;
+  color: #A9A9A9;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+/* --- responsice --- */
+
+@media (max-width: 375px) {
+
+  .container 
+  {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  #header 
+  {
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }  
+
+  #header h1.title 
+  {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+
+  #header p 
+  {
+    font-size: 12px;
+    line-height: 15px;
+    width: 100%;
+  }
+  #main .content 
+  {
+    flex-direction: column;
+  }
+
+  .banner-img 
+  {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  aside 
+  {
+    order: -1;
+  }
+
+  .wrap {
+    /* background-color: #fff; */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0);
+    display: flex;
+    position: static;
+    border-radius: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    right: 0;
+    flex-direction: row;
+  }
+
+  .wrap .up
+  {
+    width: 100%;
+  }
+
+  .wrap .wrap_information .material-icons 
+  {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  #main .content form
+  {
+    margin: 20px 0;
+  }
+
+  .wrap .wrap_information .information h5 
+  {
+    font-family: var(--montserrat);
+    font-weight: var(--bold);
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #BDBDBD;
+  }
+
+  .wrap .wrap_information .information h4 
+  {
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: var(--medium);
+    font-size: 10px;
+    line-height: 13px;
+    color: #333333;
+  }
+
+  #main .content h4.ingredient
+  {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  #main .content article i 
+  {
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    padding-bottom: 0;
+  }
+
+  #main .content .ingredient label 
+  {
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #333333;
+    padding-bottom: 0px;
+}
+
+
+#main h4.title {
+  font-size: 24;
+  line-height: 32px;
+}
+
+
+p.source 
+{
+  font-size: 12px;
+  color: #BDBDBD;
+  line-height: 150%;
+  margin-top: 50px;
+}
+
+footer h5 
+{
+  padding-top: 0;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
